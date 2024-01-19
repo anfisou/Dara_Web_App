@@ -9,7 +9,7 @@ We developed the client side of the app that presents to the user the current bo
 
 The server side of the app was implemented with JavaScript and Node.
 
-To use the app yourself, all you need to do is host the server using ``` node server/index.js``` and then open (multiple times) the client/index.html file.
+To use the app yourself, all you need to do is host the server using ```node server/index.js``` and then open (multiple times) the client/index.html file.
 
 # Versâo Portuguesa
 
