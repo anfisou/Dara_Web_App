@@ -1,0 +1,1538 @@
+body {
+  background-color: #fbff7c;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*  CSS DEFINITION FOR THE AUTHENTICATION PAGE */
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 70vh;
+  margin: 15vh auto;
+  box-shadow: 7px 7px 20px rgb(63, 63, 63);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.left {
+  flex: 40%;
+  height: 100%;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right {
+  flex: 60%;
+  height: 100%;
+  background-color: #ffe35e;
+  align-items: flex-start;
+}
+
+.form {
+  text-align: left;
+  width: 100%;
+}
+
+.form * {
+  font-family: "Montserrat", sans-serif;
+  color: #e4663a;
+}
+
+.login-game-name {
+  font-family: "ArcadeClassic", sans-serif;
+  letter-spacing: 10px;
+  font-size: 100px;
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: 0%;
+  color: #468966;
+}
+
+.login-game-name-game {
+  font-family: "ArcadeClassic", sans-serif;
+  letter-spacing: 10px;
+  font-size: 100px;
+  margin-left: 15%;
+  color: #468966;
+  margin-top: -3%;
+}
+
+.auth-credentials {
+  margin-top: 50px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group .icon {
+  margin-left: 19%;
+  margin-right: 10px;
+  font-size: 25px;
+  color: #e4663a;
+  vertical-align: middle;
+  position: relative;
+  top: 4px;
+}
+
+.input-group input {
+  width: 63%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #e4663a;
+  background-color: transparent;
+  outline: none;
+  font-size: 18px;
+  border-radius: 0;
+}
+
+.input-group input:focus {
+  border-bottom: 3px solid #e4663a;
+}
+
+.input-group input::placeholder {
+  font-size: 16px;
+  color: #e4663a;
+}
+
+.button-style-login {
+  font-family: "ArcadeClassic", sans-serif;
+  float: right;
+  margin-right: 10%;
+  margin-top: 60px;
+  height: 50px;
+  width: 130px;
+  border: none;
+  background-color: #468966;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+.button-style-login:hover {
+  color: #ffe35e;
+}
+
+@media screen and (max-height: 830px) {
+  .login-game-name {
+    font-size: 80px;
+    margin-left: 7%;
+    margin-top: 9%;
+  }
+
+  .login-game-name-game {
+    font-size: 80px;
+    margin-left: 12%;
+    margin-bottom: 0%;
+  }
+
+  .auth-credentials {
+    margin-top: 5%;
+  }
+
+  .input-group input {
+    width: 60%;
+  }
+
+  .button-style-login {
+    margin-top: 20px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .auth-page {
+    width: 70%;
+  }
+
+  .left {
+    flex: 40%;
+  }
+
+  .right {
+    flex: 60%;
+  }
+
+  .login-game-name {
+    margin-top: 8%;
+  }
+
+  .auth-credentials {
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .auth-page {
+    width: 90%;
+  }
+
+  .left {
+    flex: 0%;
+  }
+
+  .right {
+    flex: 100%;
+  }
+
+  .login-game-name {
+    margin-top: 5%;
+  }
+
+  .auth-credentials {
+    margin-top: 2%;
+  }
+}
+
+/*  CSS DEFINITION FOR THE HOMEPAGE */
+
+.homepage {
+  height: 100vh;
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.logotipo {
+  width: 100%;
+  height: 40%;
+  background-color: #ffe35e;
+}
+
+.homepage-buttons {
+  display: flex;
+  flex-grow: 1;
+}
+
+.dara-text {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 145px;
+  letter-spacing: 10px;
+  color: #468966;
+  margin-top: 5%;
+}
+
+.game-text {
+  font-family: "ArcadeClassic", sans-serif;
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: #468966;
+  margin-top: -30px;
+}
+
+.left-buttons {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 50%;
+}
+
+.left-buttons button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 30%;
+  border: 0px;
+  border-radius: 0px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.left-buttons button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/play.jpg");
+  background-size: cover;
+  filter: blur(7px);
+  transition: filter 0.4s ease;
+}
+
+.left-buttons button:hover::before {
+  filter: blur(0px);
+}
+
+.left-buttons button .button-text {
+  color: white;
+  position: relative;
+  font-family: "ArcadeClassic", sans-serif;
+  letter-spacing: 20px;
+  font-size: 68px;
+  z-index: 1;
+}
+
+.right-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+}
+
+.right-buttons button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 30%;
+  border: 0px;
+  border-radius: 0px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.right-buttons button:nth-child(1)::before {
+  content: "";
+  background: url("/images/class.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: filter 0.4s ease;
+}
+
+.right-buttons button:nth-child(2)::before {
+  content: "";
+  background: url("/images/rules.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: filter 0.4s ease;
+}
+
+.right-buttons button:nth-child(3)::before {
+  content: "";
+  background: url("/images/logout.jpg");
+  background-size: cover;
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: filter 0.4s ease;
+}
+
+.right-buttons button:hover::before {
+  filter: blur(0px);
+}
+
+.right-buttons button .button-text {
+  color: white;
+  position: relative;
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .homepage-buttons {
+    flex-direction: column;
+  }
+
+  .logotipo {
+    height: 35%;
+  }
+}
+
+/* CSS DEFINITION FOR THE GAME RULES PAGE */
+
+.game-rules {
+  display: none;
+}
+
+.title-and-rules {
+  display: flex;
+  margin-top: 130px;
+  width: 100%;
+}
+
+.rules-title {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rules-title span {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 145px;
+  letter-spacing: 10px;
+  color: #468966;
+}
+
+.button-rules-div {
+  margin-top: 20px;
+}
+
+.button-style-rules {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 700;
+  background-color: #468966;
+  color: white;
+  font-size: 19px;
+  border: 0;
+  margin-top: 30px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.button-style-rules:hover {
+  color: #ffe35e;
+}
+
+.waiting::after {
+  content: "▮";
+  font-size: 30px;
+  vertical-align: -2px;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.game-rules-list {
+  margin-right: 40px;
+  flex: 50%;
+}
+
+.top-window {
+  background-color: rgba(69, 69, 69, 0.88);
+  padding: 5px;
+  display: flex;
+  font-family: "Courier New", monospace;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.icons-terminal {
+  display: flex;
+  align-items: center;
+}
+
+.iconn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.iconn::before {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.iconn:hover::before {
+  display: block;
+}
+
+.iconn.close::before {
+  content: "\2715";
+}
+
+.iconn.minimize::before {
+  content: "\2500";
+}
+
+.iconn.maximize::before {
+  content: "\2610";
+}
+
+.iconn.red {
+  background-color: #da3f3f;
+  margin-left: 5px;
+}
+
+.iconn.yellow {
+  background-color: #ffd429;
+}
+
+.iconn.green {
+  background-color: #53be53;
+}
+
+.title-terminal {
+  flex: 1;
+  margin-left: -70px;
+  color: white;
+}
+
+.content-rules {
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.99);
+  box-shadow: 7px 7px 12px rgb(63, 63, 63);
+  color: #00ff00;
+  font-family: "Courier New", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+  .title-and-rules {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .rules-title {
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-direction: row;
+  }
+
+  .rules-title span {
+    font-size: 80px;
+  }
+
+  .game-rules-list {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  .button-style-rules {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .content-rules {
+    font-size: 18px;
+  }
+
+  .rules-title {
+    flex-direction: column;
+  }
+
+  .button-style-rules {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-height: 950px) and (min-width: 876px) {
+  .title-and-rules {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .rules-title {
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-direction: row;
+  }
+
+  .rules-title span {
+    font-size: 80px;
+  }
+
+  .game-rules-list {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  .button-style-rules {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+}
+
+/* CSS DEFINITION FOR THE CLASSIFICATION PAGE */
+
+.classifications {
+  display: none;
+  height: 913px;
+}
+
+.classification-page {
+  display: flex;
+  margin-top: 130px;
+  width: 100%;
+}
+
+.classification-title {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.classification-results {
+  margin-right: 40px;
+  flex: 50%;
+}
+
+.titles .small-font {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 40px;
+  letter-spacing: 10px;
+  color: #468966;
+}
+
+.titles .larger-font {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 50px;
+  letter-spacing: 10px;
+  color: #468966;
+}
+
+.button-classification-div {
+  margin-top: 20px;
+}
+
+.button-style-classification {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 700;
+  background-color: #468966;
+  color: white;
+  font-size: 19px;
+  border: 0;
+  margin-top: 30px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.button-style-classification:hover {
+  color: #ffe35e;
+}
+
+.two-buttons {
+  margin-bottom: 20px;
+}
+
+.button-matches-list,
+.button-win-rate-list {
+  width: 205px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 700;
+  background-color: #468966;
+  color: white;
+  font-size: 17px;
+  border: 0;
+  margin-top: 30px;
+}
+
+.button-matches-list:hover,
+.button-win-rate-list:hover {
+  color: #ffe35e;
+}
+
+.button-matches-list {
+  margin-right: 10px;
+}
+
+.button-win-rate-list {
+  margin-left: 10px;
+}
+
+.board-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.board-filter > div {
+  margin: 0 10px;
+}
+
+.board-size-p,
+.game-mode-p {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 25px;
+  color: #468966;
+  margin-bottom: 0px;
+}
+
+.select-mirror {
+  box-shadow: 7px 7px 12px rgb(63, 63, 63);
+  position: relative;
+  display: flex;
+  width: 13em;
+  height: 3em;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.select-mirror::after {
+  font-size: 16px;
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  transition: 0.7s all ease;
+  pointer-events: none;
+}
+
+.select-mirror:hover::after {
+  color: #00ff00;
+}
+
+.select-1,
+.select-2 {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  flex: 1;
+  padding: 0 1em;
+  background-color: #34495e;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.99);
+  color: #00ff00;
+  font-family: "Montserrat", sans-serif;
+}
+
+.select-1::-ms-expand,
+.select-2::-ms-expand {
+  display: none;
+}
+
+.classifications-table,
+.win-rate-table {
+  width: 900px;
+  display: table;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border-width: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: #00ff00;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.classification-page tr {
+  height: 80px;
+}
+
+.classifications-table th {
+  padding: 18px;
+  background-color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+}
+
+.win-rate-table th {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+  width: 33.33%;
+}
+
+.classifications-table .first {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.win-rate-table .first {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.classifications-table .last,
+.win-rate-table .last {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+  .classification-page {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .classification-title {
+    margin-top: 50px;
+    flex-direction: row;
+    flex: 30%;
+  }
+
+  .classification-results {
+    flex: 70%;
+  }
+
+  .titles {
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+
+  .button-style-classification {
+    margin-left: 30px;
+  }
+
+  .classifications-table,
+  .win-rate-table {
+    width: 800px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .classification-title {
+    flex-direction: column;
+  }
+
+  .button-style-classification {
+    margin-left: 0px;
+  }
+
+  .titles {
+    margin-right: 0px;
+  }
+
+  .classification-results {
+    margin-top: 70px;
+    margin-right: 0px;
+  }
+
+  .classifications-table,
+  .win-rate-table {
+    width: 600px;
+    font-size: 13px;
+  }
+
+  .classification-title .small-font {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 877px) {
+  .classifications-table,
+  .win-rate-table {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .win-rate-table {
+    width: 325px;
+    font-size: 10px;
+  }
+
+  .classifications-table {
+    width: 325px;
+    font-size: 8.5px;
+  }
+
+  .button-win-rate-list {
+    margin-left: 0px;
+    width: 175px;
+  }
+
+  .button-matches-list {
+    margin-right: 0px;
+    width: 175px;
+  }
+
+  .two-buttons {
+    flex-direction: column;
+  }
+
+  .select-mirror {
+    width: 11em;
+  }
+
+  .select-1,
+  .select-2 {
+    font-size: 12px;
+  }
+
+  .classifications-table th {
+    padding: 11px;
+  }
+}
+
+@media screen and (max-height: 950px) and (min-width: 876px) {
+  .classification-page {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .classification-title {
+    margin-top: 50px;
+    flex-direction: row;
+    flex: 30%;
+  }
+
+  .classification-results {
+    flex: 70%;
+  }
+
+  .titles {
+    margin-right: 30px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+
+  .button-style-classification {
+    margin-left: 30px;
+  }
+
+  .classifications-table,
+  .win-rate-table {
+    width: 800px;
+    font-size: 15px;
+  }
+}
+
+.classifications-table {
+  display: none;
+}
+
+#board-filter-game-mode {
+  display: none;
+}
+
+/* CSS DEFINITION FOR THE CONFIGURATION MENU */
+
+.menu {
+  display: none;
+  height: 913px;
+}
+
+.menu-page {
+  display: flex;
+  margin-top: 130px;
+  width: 100%;
+}
+
+.menu-bottom {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-top {
+  margin-right: 40px;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-style-start {
+  margin-bottom: 50px;
+  height: 200px;
+  width: 400px;
+  font-size: 36px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: "ArcadeClassic", sans-serif;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid #468966;
+  background: linear-gradient(
+    to right,
+    rgba(70, 137, 102, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(70, 137, 102, 0.1) 100%
+  );
+  box-shadow: inset 0 0 10px rgba(70, 137, 102, 0.4),
+    0 0 9px 3px rgba(70, 137, 102, 0.1);
+}
+
+.button-style-start:hover {
+  color: #468966;
+  box-shadow: inset 0 0 30px rgba(70, 137, 102, 0.6),
+    0 0 9px 3px rgba(70, 137, 102, 0.2);
+}
+
+.button-style-start:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 1s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(70, 137, 102, 0.2) 40%,
+    rgba(70, 137, 102, 0.2) 60%,
+    transparent 100%
+  );
+}
+
+.button-style-start:hover:before {
+  transform: translateX(15em);
+}
+
+.jumping-text {
+  animation: jump 1s infinite;
+  color: #468966;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.button-style-homepage2 {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 700;
+  background-color: #468966;
+  color: white;
+  font-size: 19px;
+  border: 0;
+  margin-top: 50px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.button-style-homepage2:hover {
+  color: #ffe35e;
+}
+
+.first-two-options {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.last-two-options {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.board-size-configuration,
+.game-mode-configuration,
+.ai-difficulty-configuration,
+.starting-player-configuration {
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 45px;
+  letter-spacing: 7px;
+  color: #468966;
+  margin-bottom: 10px;
+}
+
+.select {
+  box-shadow: 7px 7px 12px rgb(63, 63, 63);
+  position: relative;
+  display: flex;
+  width: 23em;
+  height: 5em;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.select::after {
+  font-size: 25px;
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  transition: 0.7s all ease;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: #00ff00;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  flex: 1;
+  padding: 0 1em;
+  background-color: #34495e;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.99);
+  color: #00ff00;
+  font-family: "Montserrat", sans-serif;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+#ai-difficulty {
+  display: none;
+  flex-direction: column;
+}
+
+#starting-player {
+  display: none;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .menu-page {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .menu-bottom {
+    margin-top: 50px;
+    flex-direction: row;
+  }
+
+  .button-style-start {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+
+  .button-style-homepage2 {
+    margin-left: 30px;
+  }
+
+  .first-two-options {
+    margin-top: 150px;
+    margin-bottom: 40px;
+  }
+
+  .last-two-options {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .menu-bottom {
+    flex-direction: column;
+  }
+
+  .menu-top {
+    margin-right: 0px;
+  }
+
+  .button-style-start {
+    width: 300px;
+    margin-right: 0px;
+  }
+
+  .button-style-homepage2 {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .first-two-options {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .first-two-options .config:first-child {
+    margin-bottom: 30px;
+  }
+
+  .last-two-options {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .last-two-options .config:first-child {
+    margin-bottom: 30px;
+  }
+
+  .select {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 20em;
+  }
+}
+
+@media screen and (max-height: 950px) and (min-width: 876px) {
+  .menu-page {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .menu-bottom {
+    margin-top: 50px;
+    flex-direction: row;
+  }
+
+  .button-style-start {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+
+  .button-style-homepage2 {
+    margin-left: 30px;
+  }
+
+  .first-two-options {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .last-two-options {
+    margin-bottom: 150px;
+  }
+}
+
+/* CSS DEFINITION FOR THE GAME PAGE */
+
+.game {
+  height: auto;
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#jogo {
+  display: flex;
+  justify-content: center;
+}
+
+#board {
+  height: 540px;
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 6px solid #468966;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 80px;
+  margin-left: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#direita {
+  height: 540px;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 6px outset #468966;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#esquerda {
+  height: 540px;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 6px inset #468966;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.play-game-name {
+  margin-bottom: 0px;
+  font-family: "ArcadeClassic", sans-serif;
+  letter-spacing: 10px;
+  font-size: 80px;
+  color: #468962;
+  margin-top: 20px;
+}
+
+#winner {
+  font-family: "Montserrat", sans-serif;
+  color: #468962;
+  font-size: 17px;
+}
+
+#AI {
+  font-family: "Montserrat", sans-serif;
+  color: #468962;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+#text {
+  font-family: "Montserrat", sans-serif;
+  color: #468962;
+  font-size: 17px;
+}
+
+.tile {
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  position: relative;
+  overflow: visible;
+  /* Circle */
+  border-radius: 50%;
+  border: 5px solid #468962;
+}
+
+.buttons-give-up-back-to-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.button-style {
+  justify-content: center;
+  align-items: center;
+}
+
+#quit-game-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 700;
+  background-color: #468966;
+  color: white;
+  font-size: 19px;
+  border: 0;
+  margin-top: 30px;
+  animation: bounce 1s infinite;
+}
+
+#give-up-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 700;
+  background-color: #9e4539;
+  color: white;
+  font-size: 19px;
+  border: 0;
+  margin-top: 30px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+#quit-game-button:hover {
+  color: #ffe35e;
+}
+
+#give-up-button:hover {
+  color: #ffe35e;
+}
+
+@media screen and (max-width: 1150px) {
+  #esquerda,
+  #direita {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  #board {
+    margin: 0 auto;
+  }
+
+  .play-game-name {
+    font-size: 60px;
+  }
+
+  #winner,
+  #text,
+  #ai {
+    font-size: 14px;
+  }
+}
+
+/* CSS DEFINITION FOR THE WAITING PAGE */
+
+.wait-game {
+  height: 100vh;
+  display: none;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.button-style-waiting-page {
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "ArcadeClassic", sans-serif;
+  font-weight: 700;
+  background-color: #9e4539;
+  color: white;
+  font-size: 19px;
+  border: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.wait-game h2 {
+  font-family: "ArcadeClassic", sans-serif;
+  color: #468966;
+  font-size: 50px;
+  letter-spacing: 4px;
+  position: relative;
+}
+
+.wait-game h2::after {
+  content: '...';
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.button-style-waiting-page:hover {
+  color: #ffe35e;
+}
+
+@media screen and (max-width: 876px) {
+  .wait-game h2 {
+    font-size: 35px;
+  }
+
+  .button-style-waiting-page {
+    font-size: 15px;
+  }
+}
+
+
+/* CANVAS CSS */
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+/* GENERAL CSS */
+
+span {
+  display: block;
+  font-weight: bold;
+  color: black;
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
