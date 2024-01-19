@@ -1,7 +1,7 @@
 # English Version
 
 This project was developed for the subject 'Tecnologias Web' by the students [André Sousa](https://github.com/anfisou), 
-[António Cardoso](https://github.com/ToniCardosooo) and [Tómas Monteiro](https://github.com/Trucak).
+[António Cardoso](https://github.com/ToniCardosooo) and [Tomás Monteiro](https://github.com/Trucak).
 
 The goal of this project was to develop a Web App that would allow multiple player to play a board game called 'Dara' online against each other.
 
@@ -14,7 +14,7 @@ To use the app yourself, all you need to do is host the server using ``` node se
 # Versâo Portuguesa
 
 Este projeto foi desenvolvido no âmbito da unidade curricular 'Tecnologias Web' peloas alunos [André Sousa](https://github.com/anfisou), 
-[António Cardoso](https://github.com/ToniCardosooo) e [Tómas Monteiro](https://github.com/Trucak).
+[António Cardoso](https://github.com/ToniCardosooo) e [Tomás Monteiro](https://github.com/Trucak).
 
 O objetivo deste projeto é desenvolver uma Aplicação Web que permitisse a vários jogadores jogarem online um jogo de tabuleiro chamado 'Dara' entre si.
 
